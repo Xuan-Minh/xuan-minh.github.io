@@ -1,0 +1,572 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  /*62.5% = 10px; to make it easier to calculate REM units.*/
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*Polices d'écriture*/
+@font-face {
+  font-family: 'Lment-v02';
+  src: url('Lment-v02.woff2') format('woff2'),
+    url('Lment-v02.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yellow';
+  src: url('Yellow-Regular.woff2') format('woff2'),
+    url('Yellow-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'Basteleur Moonlight';
+  src: url('Basteleur-Moonlight.woff2') format('woff2'),
+    url('Basteleur-Moonlight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cantique Normal';
+  src: url('Cantique-Normal.woff2') format('woff2'),
+    url('Cantique-Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Motter Ombra';
+  src: url('Motter-Ombra.woff2') format('woff2'),
+    url('Motter-Ombra.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  width: 100%;
+  font-weight: 300;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0;
+  overflow: hidden;
+  flex-flow: row;
+  flex-wrap: wrap;
+  outline: black;
+}
+
+header {
+  margin: 10px auto;
+  border: solid black 2px;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  background-color: white;
+  font-family: 'Basteleur Moonlight';
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+
+}
+
+header:hover {
+  background-color: black;
+  color: white;
+}
+span:hover {
+  cursor: pointer;
+}
+
+
+/*Horloge*/
+#clock {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.main {
+  height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.leftpage {
+  margin-left: 2px;
+  box-sizing: border-box;
+  border: double black 2px;
+  width: calc(50% - 9px);
+
+
+}
+
+.rightpage {
+  margin-right: 2px;
+  box-sizing: border-box;
+  border: double black 2px;
+  width: calc(50% - 9px);
+  overflow: hidden;
+}
+
+.location {
+  position: absolute;
+  left: 80%;
+  bottom: 5%;
+  text-decoration: underline;
+  text-indent: 0%;
+   font-family: 'Lment-v02';
+}
+
+.location:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.stopmoving {
+  font-family: 'Basteleur Moonlight';
+}
+
+/* Makes the animation pause on hover */
+.stopmoving:hover {
+  animation-play-state: paused;
+  background-color: black;
+  color: white;
+}
+
+/* The animation */
+@keyframes marquee {
+  -0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.who {
+  font-size: 45px;
+  text-align: center;
+
+}
+
+
+.who1 {
+  color: black;
+  font-family: 'Yellow';
+
+}
+
+.who2 {
+  color: white;
+  background-color: white;
+  font-family: 'Basteleur Moonlight';
+}
+
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+  .moving-text {
+    animation: 1.3s marquee linear infinite;
+    font-family: 'Cantique Normal';
+  }
+
+  .moving-text-2 {
+    animation: 2.5s marquee linear infinite;
+  }
+
+  .moving-text-3 {
+    animation: 0.6s marquee linear infinite;
+  }
+
+  .moving-text-4 {
+    animation: 1s marquee linear infinite;
+  }
+
+  .moving-text-5 {
+    animation: 0.8s marquee linear infinite;
+    font-family: 'Cantique Normal';
+  }
+
+  .moving-text-6 {
+    animation: 1.2s marquee linear infinite;
+    font-family: 'Lment-v02';
+  }
+
+  .moving-text-7 {
+    animation: 1.62s marquee linear infinite;
+    font-family: 'Lment-v02';
+  }
+
+  .moving-text-8 {
+    animation: 1.3s marquee linear infinite;
+  }
+
+  .moving-text-9 {
+    animation: 0.67s marquee linear infinite;
+  }
+
+  .moving-text-10 {
+    animation: 0.4s marquee linear infinite;
+  }
+}
+
+.text_blink {
+  animation: text-blink 5s steps(1, end) infinite;
+}
+
+@keyframes text-blink {
+  0% {
+    font-family: 'Basteleur Moonlight';
+  }
+
+  50% {
+    font-family: 'Yellow';
+    font-size: 16px;
+  }
+
+  100% {
+    font-family: 'Yellow';
+  }
+}
+
+
+.text_blink2 {
+  animation: text-blink2 1s steps(1, end) infinite;
+}
+
+@keyframes text-blink2 {
+  0% {
+    font-family: 'Cantique Normal';
+  }
+
+  50% {
+    font-family: 'Yellow';
+    font-size: 16px;
+  }
+
+  100% {
+    font-family: 'Yellow';
+  }
+}
+.text_blink3 {
+  animation: text-blink3 2.2s steps(1, end) infinite;
+}
+
+@keyframes text-blink3{
+  0% {
+    font-family: 'unknown';
+  }
+
+  50% {
+    font-family: 'Yellow';
+    font-size: 16px;
+  }
+
+  100% {
+    font-family: 'Yellow';
+  }
+}
+
+
+
+.sub_container{
+  width: 100%;
+}
+.crea_trigger1
+{width: 100%;display: flex;}
+
+.moving-text,
+.moving-text-2,
+.moving-text-3,
+.moving-text-4,
+.moving-text-5 {
+  width: 100%;
+  font-size: 70px;
+}
+
+.test {
+  display: none;
+}
+
+/*Categories*/
+.activities {
+  text-indent: 22.5%;
+  font-size: 30px;
+}
+
+.accphoto:hover {
+  cursor: pointer;
+
+}
+.activities_cat {
+  font-family: 'Basteleur Moonlight';
+}
+
+.activities_cat:hover {
+  background-color: lightgray;
+
+}
+
+
+/*Effet de blink*/
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Affichage TEST*/
+.rp_crea {
+
+  display: none;
+  width: 100%;
+  flex-flow: row wrap;
+  
+  flex-wrap:wrap;
+
+}
+.rp_video {
+  display: none;
+  width: 100%;
+  flex-flow: row wrap;
+  
+  flex-wrap:wrap;
+
+}
+.art_container{width: 100%;
+display: flex;
+  justify-content: center;
+ flex-direction: row;
+margin-left:5px;
+margin-right: 5px; }
+
+.rp_photo {
+  display: none;
+  width: 100%;
+
+  flex-flow: row wrap;
+  
+  flex-wrap:wrap;
+}
+
+.rp_display {
+display: flex;
+
+}
+.rp_who {
+  display: none; 
+}
+
+.rp_titre {
+  font-family: 'Basteleur Moonlight';
+  font-size: 25px;
+  margin:5%;
+  width: 100%;
+  font-weight: bold;
+}
+.rp_art{
+  margin: 10px;
+  width:30%;
+  padding:5px;
+    border: solid black 2px;
+  align-items: center;
+  
+}
+.cartel{
+  font-family: "Yellow";
+  margin: 5%;
+  font-size: 16px;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+.rp_subtitle {
+  width: 100%;
+  font-weight: bold;
+  margin-left:10%;
+  margin-right: 10%;
+  font-family: 'Lment-v02';
+}
+.rp_subtitle{
+  cursor: pointer;
+}
+.rp_content {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.Photo_1{
+  display: none;
+}
+.Photo_2{
+  display: none;
+}
+.Photo_3{
+  display: none;
+}
+.Video_1{
+  display: none;
+  width: 60%;
+}
+.Video_2{
+  display: none;
+    width: 60%;
+}
+.Video_3{
+  display: none;  width: 60%;
+}
+.Crea_2{
+  display: none;
+  margin-top: 0%;
+}
+@media (max-width:1800px) {
+  .rp_subtitle
+  {font-size:18px;}
+
+  .text_blink2{animation-play-state: paused
+  }.text_blink3{animation-play-state: paused
+  }
+@media (max-width:1100px) {
+  .activities {
+    font-size: 25px;
+  }
+  .who{
+    font-size: 25px;
+  }
+    .text_blink{animation-play-state: paused
+  }
+  .text_blink2{animation-play-state: paused
+  }.text_blink3{animation-play-state: paused
+  }
+  .rp_content{font-size:16px;}
+  .location{font-size: 13px}
+}
+
+@media (max-width:950px) {
+  .activities {
+    font-size: 20px;
+  }
+  .who{
+    font-size: 25px;
+  }
+}
+.cartel{font-size: 11px; margin-top: 0%;font-family:"Basteleur Moonlight";width:70%  }
+
+
+@media (max-width:800px) {
+  header {}
+
+  body {
+    background: white;
+  }
+.rp_subtitle{
+  font-size: 13px;
+}
+.rp_titre{
+  margin-bottom:0% ;
+}
+.rp_art{
+  margin: 10px;
+  width:18%;
+  padding:5px;
+    border: solid black 2px;
+  align-items: center;
+  
+}
+
+
+.Video_1{width:35%}
+.Video_2{width:35%}
+.Video_3{width:35%}
+.cartel{font-size: 11px; margin-top: 0%;font-family:"Basteleur Moonlight";width:70%  }
+
+  #date-time {
+    font-size: 17px;
+  }
+
+  .who {
+    font-size: 20px;
+  }
+
+  .rightpage {
+    height: calc(50% - 10px);
+    width: 100%;
+  }
+
+  .leftpage {
+    height: calc(50% - 10px);
+    width: 100%;
+  }
+
+  .activities_cat {
+    font-size: 20px;
+  }
+
+  .rp_titre{
+    font-size: 15px;
+  }
+  .br_mediaquery {
+    display: none;
+  }
+  .rp_content{
+    font-size: 14px;
+  }
+  .text_blink{animation-play-state: paused
+  }
+  .rp_photo{
+    font-size: 14px;
+  }
+  .rp_crea{
+    font-size: 14px;
+  }
+  .rp_video{
+    font-size: 14px;
+  }
+}
