@@ -48,14 +48,6 @@ a:active {
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Cantique Normal';
-  src: url('Cantique-Normal.woff2') format('woff2'),
-    url('Cantique-Normal.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
   font-family: 'Motter Ombra';
@@ -264,7 +256,6 @@ span:hover {
 
 @keyframes text-blink2 {
   0% {
-    font-family: 'Cantique Normal';
   }
 
   50% {
