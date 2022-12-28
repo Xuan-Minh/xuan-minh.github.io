@@ -133,7 +133,7 @@ $(document).ready(function() {
         $(".Crea_1").css("display", "none")
         $(".Crea_2").css("display", "none")
         $(".Crea_3").css("display", "none")
- $(".rp_subtitle").css("opacity", "1")
+        $(".rp_subtitle").css("opacity", "1")
 
 
 
@@ -164,8 +164,7 @@ $(document).ready(function() {
         $(".Crea_1").css("display", "none")
         $(".Crea_2").css("display", "none")
         $(".Crea_3").css("display", "none")
-         $(".rp_subtitle").css("opacity", "1")
-
+        $(".rp_subtitle").css("opacity", "1")
 
 
 
@@ -232,25 +231,25 @@ $(document).ready(function() {
         $(".who2").text("Archiveur de souvenirs📸")
         $(".who2").css("color", "black")
         $(".who2").css("font-family", "Yellow")
-        
+
     })
     $(document).on("click", ".crea_trigger1", function() {
         $(".Crea_1").css("display", "none")
         $(".Crea_2").css("display", "none")
         $(".Crea_3").css("display", "none")
-         $(".crea_trigger1").css("opacity", "0.5")
-         $(".crea_trigger2").css("opacity", "1")
-         $(".crea_trigger3").css("opacity", "1")
-      alert("WORK IN PROGRESS");
+        $(".crea_trigger1").css("opacity", "0.5")
+        $(".crea_trigger2").css("opacity", "1")
+        $(".crea_trigger3").css("opacity", "1")
+        alert("WORK IN PROGRESS");
 
     })
-      $(document).on("click", ".crea_trigger2", function() {
+    $(document).on("click", ".crea_trigger2", function() {
         $(".Crea_1").css("display", "none")
         $(".Crea_2").css("display", "flex")
         $(".Crea_3").css("display", "none")
-         $(".crea_trigger1").css("opacity", "1")
-         $(".crea_trigger2").css("opacity", "0.5")
-         $(".crea_trigger3").css("opacity", "1")
+        $(".crea_trigger1").css("opacity", "1")
+        $(".crea_trigger2").css("opacity", "0.5")
+        $(".crea_trigger3").css("opacity", "1")
 
 
     })
@@ -258,9 +257,9 @@ $(document).ready(function() {
         $(".Photo_1").css("display", "block")
         $(".Photo_2").css("display", "none")
         $(".Photo_3").css("display", "none")
-         $(".photo_trigger1").css("opacity", "0.5")
-         $(".photo_trigger2").css("opacity", "1")
-         $(".photo_trigger3").css("opacity", "1")
+        $(".photo_trigger1").css("opacity", "0.5")
+        $(".photo_trigger2").css("opacity", "1")
+        $(".photo_trigger3").css("opacity", "1")
 
 
 
@@ -270,8 +269,8 @@ $(document).ready(function() {
         $(".Photo_2").css("display", "block")
         $(".Photo_3").css("display", "none")
         $(".photo_trigger1").css("opacity", "1")
-         $(".photo_trigger2").css("opacity", "0.5")
-         $(".photo_trigger3").css("opacity", "1")
+        $(".photo_trigger2").css("opacity", "0.5")
+        $(".photo_trigger3").css("opacity", "1")
 
 
     })
@@ -280,32 +279,32 @@ $(document).ready(function() {
         $(".Photo_2").css("display", "none")
         $(".Photo_3").css("display", "block")
         $(".photo_trigger1").css("opacity", "1")
-         $(".photo_trigger2").css("opacity", "1")
-         $(".photo_trigger3").css("opacity", "0.5")
+        $(".photo_trigger2").css("opacity", "1")
+        $(".photo_trigger3").css("opacity", "0.5")
     })
     $(document).on("click", ".video_trigger1", function() {
         $(".Video_1").css("display", "block")
         $(".Video_2").css("display", "none")
         $(".Video_3").css("display", "none")
-             $(".video_trigger1").css("opacity", "0.5")
-         $(".video_trigger2").css("opacity", "1")
-         $(".video_trigger3").css("opacity", "1")
+        $(".video_trigger1").css("opacity", "0.5")
+        $(".video_trigger2").css("opacity", "1")
+        $(".video_trigger3").css("opacity", "1")
     })
     $(document).on("click", ".video_trigger2", function() {
         $(".Video_1").css("display", "none")
         $(".Video_2").css("display", "block")
         $(".Video_3").css("display", "none")
         $(".video_trigger1").css("opacity", "1")
-         $(".video_trigger2").css("opacity", "0.5")
-         $(".video_trigger3").css("opacity", "1")
+        $(".video_trigger2").css("opacity", "0.5")
+        $(".video_trigger3").css("opacity", "1")
     })
     $(document).on("click", ".video_trigger3", function() {
         $(".Video_1").css("display", "none")
         $(".Video_2").css("display", "none")
         $(".Video_3").css("display", "block")
         $(".video_trigger1").css("opacity", "1")
-         $(".video_trigger2").css("opacity", "1")
-         $(".video_trigger3").css("opacity", "0.5")
+        $(".video_trigger2").css("opacity", "1")
+        $(".video_trigger3").css("opacity", "0.5")
     })
     $(document).on("click", ".mail_clip", function() {
         var copyText = "naux.pro@gmail.com";
@@ -362,4 +361,3 @@ function hover_acOff3() {
 
 $(document).on("mouseenter", ".acccrea", hover_acOn3);
 $(document).on("mouseleave", ".acccrea", hover_acOff3);
-

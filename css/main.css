@@ -10,6 +10,7 @@ html {
   font-size: 62.5%;
   /*62.5% = 10px; to make it easier to calculate REM units.*/
 }
+
 a,
 a:hover,
 a:focus,
@@ -91,6 +92,7 @@ header:hover {
   background-color: black;
   color: white;
 }
+
 span:hover {
   cursor: pointer;
 }
@@ -129,13 +131,13 @@ span:hover {
   overflow: hidden;
 }
 
-.location {
+.location{
   position: absolute;
   left: 80%;
   bottom: 5%;
   text-decoration: underline;
   text-indent: 0%;
-   font-family: 'Lment-v02';
+  font-family: 'Lment-v02';
 }
 
 .location:hover {
@@ -159,6 +161,7 @@ span:hover {
   -0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -187,7 +190,7 @@ span:hover {
 @media (prefers-reduced-motion: no-preference) {
   .moving-text {
     animation: 1.3s marquee linear infinite;
-   
+
   }
 
   .moving-text-2 {
@@ -204,7 +207,7 @@ span:hover {
 
   .moving-text-5 {
     animation: 0.8s marquee linear infinite;
-  
+
   }
 
   .moving-text-6 {
@@ -255,8 +258,7 @@ span:hover {
 }
 
 @keyframes text-blink2 {
-  0% {
-  }
+  0% {}
 
   50% {
     font-family: 'Yellow';
@@ -267,11 +269,12 @@ span:hover {
     font-family: 'Yellow';
   }
 }
+
 .text_blink3 {
   animation: text-blink3 2.2s steps(1, end) infinite;
 }
 
-@keyframes text-blink3{
+@keyframes text-blink3 {
   0% {
     font-family: 'unknown';
   }
@@ -287,12 +290,14 @@ span:hover {
 }
 
 
-
-.sub_container{
+.sub_container {
   width: 100%;
 }
-.crea_trigger1
-{width: 100%;display: flex;}
+
+.crea_trigger1 {
+  width: 100%;
+  display: flex;
+}
 
 .moving-text,
 .moving-text-2,
@@ -303,9 +308,6 @@ span:hover {
   font-size: 70px;
 }
 
-.test {
-  display: none;
-}
 
 /*Categories*/
 .activities {
@@ -317,6 +319,7 @@ span:hover {
   cursor: pointer;
 
 }
+
 .activities_cat {
   font-family: 'Basteleur Moonlight';
 }
@@ -352,62 +355,70 @@ span:hover {
   display: none;
   width: 100%;
   flex-flow: row wrap;
-  
-  flex-wrap:wrap;
+
+  flex-wrap: wrap;
 
 }
+
 .rp_video {
   display: none;
   width: 100%;
   flex-flow: row wrap;
-  
-  flex-wrap:wrap;
+
+  flex-wrap: wrap;
 
 }
-.art_container{width: 100%;
-display: flex;
+
+.art_container {
+  width: 100%;
+  display: flex;
   justify-content: center;
- flex-direction: row;
-margin-left:5px;
-margin-right: 5px; }
+  flex-direction: row;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 .rp_photo {
   display: none;
   width: 100%;
 
   flex-flow: row wrap;
-  
-  flex-wrap:wrap;
+
+  flex-wrap: wrap;
 }
 
 .rp_display {
-display: flex;
+  display: flex;
 
 }
+
 .rp_who {
-  display: none; 
+  display: none;
 }
 
 .rp_titre {
   font-family: 'Basteleur Moonlight';
   font-size: 25px;
-  margin:5%;
+  margin: 5%;
   width: 100%;
   font-weight: bold;
 }
-.rp_art{
+
+.rp_art {
   margin: 10px;
-  width:30%;
-  padding:5px;
-    border: solid black 2px;
+  width: 30%;
+  padding: 5px;
+  border: solid black 2px;
   align-items: center;
-  
+
 }
-.cartel{
+
+.cartel {
   font-family: "Yellow";
   margin: 5%;
   font-size: 16px;
 }
+
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
@@ -422,142 +433,204 @@ display: flex;
 .rp_subtitle {
   width: 100%;
   font-weight: bold;
-  margin-left:10%;
+  margin-left: 10%;
   margin-right: 10%;
   font-family: 'Lment-v02';
 }
-.rp_subtitle{
+
+.rp_subtitle {
   cursor: pointer;
 }
+
 .rp_content {
   margin-left: 5%;
   margin-right: 5%;
 }
-.Photo_1{
+
+.Photo_1 {
   display: none;
 }
-.Photo_2{
+
+.Photo_2 {
   display: none;
 }
-.Photo_3{
+
+.Photo_3 {
   display: none;
 }
-.Video_1{
+
+.Video_1 {
   display: none;
   width: 60%;
 }
-.Video_2{
+
+.Video_2 {
   display: none;
-    width: 60%;
+  width: 60%;
 }
-.Video_3{
-  display: none;  width: 60%;
+
+.Video_3 {
+  display: none;
+  width: 60%;
 }
-.Crea_2{
+
+.Crea_2 {
   display: none;
   margin-top: 0%;
 }
+
 @media (max-width:1800px) {
-  .rp_subtitle
-  {font-size:18px;}
-
-  .text_blink2{animation-play-state: paused
-  }.text_blink3{animation-play-state: paused
-  }
-@media (max-width:1100px) {
-  .activities {
-    font-size: 25px;
-  }
-  .who{
-    font-size: 25px;
-  }
-    .text_blink{animation-play-state: paused
-  }
-  .text_blink2{animation-play-state: paused
-  }.text_blink3{animation-play-state: paused
-  }
-  .rp_content{font-size:16px;}
-  .location{font-size: 13px}
-}
-
-@media (max-width:950px) {
-  .activities {
-    font-size: 20px;
-  }
-  .who{
-    font-size: 25px;
-  }
-}
-.cartel{font-size: 11px; margin-top: 0%;font-family:"Basteleur Moonlight";width:70%  }
-
-
-@media (max-width:800px) {
-  header {}
-
-  body {
-    background: white;
-  }
-.rp_subtitle{
-  font-size: 13px;
-}
-.rp_titre{
-  margin-bottom:0% ;
-}
-.rp_art{
-  margin: 10px;
-  width:18%;
-  padding:5px;
-    border: solid black 2px;
-  align-items: center;
-  
-}
-
-
-.Video_1{width:35%}
-.Video_2{width:35%}
-.Video_3{width:35%}
-.cartel{font-size: 11px; margin-top: 0%;font-family:"Basteleur Moonlight";width:70%  }
-
-  #date-time {
-    font-size: 17px;
+  .rp_subtitle {
+    font-size: 18px;
   }
 
-  .who {
-    font-size: 20px;
+  .text_blink2 {
+    animation-play-state: paused
   }
 
-  .rightpage {
-    height: calc(50% - 10px);
-    width: 100%;
+  .text_blink3 {
+    animation-play-state: paused
   }
 
-  .leftpage {
-    height: calc(50% - 10px);
-    width: 100%;
+  @media (max-width:1100px) {
+    .activities {
+      font-size: 25px;
+    }
+
+    .who {
+      font-size: 25px;
+    }
+
+    .text_blink {
+      animation-play-state: paused
+    }
+
+    .text_blink2 {
+      animation-play-state: paused
+    }
+
+    .text_blink3 {
+      animation-play-state: paused
+    }
+
+    .rp_content {
+      font-size: 16px;
+    }
+
+    .location {
+      font-size: 13px
+    }
   }
 
-  .activities_cat {
-    font-size: 20px;
+  @media (max-width:950px) {
+    .activities {
+      font-size: 20px;
+    }
+
+    .who {
+      font-size: 25px;
+    }
   }
 
-  .rp_titre{
-    font-size: 15px;
+  .cartel {
+    font-size: 11px;
+    margin-top: 0%;
+    font-family: "Basteleur Moonlight";
+    width: 70%
   }
-  .br_mediaquery {
-    display: none;
+
+
+  @media (max-width:800px) {
+    header {}
+
+    body {
+      background: white;
+    }
+
+    .rp_subtitle {
+      font-size: 13px;
+    }
+
+    .rp_titre {
+      margin-bottom: 0%;
+    }
+
+    .rp_art {
+      margin: 10px;
+      width: 18%;
+      padding: 5px;
+      border: solid black 2px;
+      align-items: center;
+
+    }
+
+
+    .Video_1 {
+      width: 35%
+    }
+
+    .Video_2 {
+      width: 35%
+    }
+
+    .Video_3 {
+      width: 35%
+    }
+
+    .cartel {
+      font-size: 11px;
+      margin-top: 0%;
+      font-family: "Basteleur Moonlight";
+      width: 70%
+    }
+
+    #date-time {
+      font-size: 17px;
+    }
+
+    .who {
+      font-size: 20px;
+    }
+
+    .rightpage {
+      height: calc(50% - 10px);
+      width: 100%;
+    }
+
+    .leftpage {
+      height: calc(50% - 10px);
+      width: 100%;
+    }
+
+    .activities_cat {
+      font-size: 20px;
+    }
+
+    .rp_titre {
+      font-size: 15px;
+    }
+
+    .br_mediaquery {
+      display: none;
+    }
+
+    .rp_content {
+      font-size: 14px;
+    }
+
+    .text_blink {
+      animation-play-state: paused
+    }
+
+    .rp_photo {
+      font-size: 14px;
+    }
+
+    .rp_crea {
+      font-size: 14px;
+    }
+
+    .rp_video {
+      font-size: 14px;
+    }
   }
-  .rp_content{
-    font-size: 14px;
-  }
-  .text_blink{animation-play-state: paused
-  }
-  .rp_photo{
-    font-size: 14px;
-  }
-  .rp_crea{
-    font-size: 14px;
-  }
-  .rp_video{
-    font-size: 14px;
-  }
-}
