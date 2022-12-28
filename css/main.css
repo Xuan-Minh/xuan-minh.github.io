@@ -195,7 +195,7 @@ span:hover {
 @media (prefers-reduced-motion: no-preference) {
   .moving-text {
     animation: 1.3s marquee linear infinite;
-    font-family: 'Cantique Normal';
+   
   }
 
   .moving-text-2 {
@@ -212,7 +212,7 @@ span:hover {
 
   .moving-text-5 {
     animation: 0.8s marquee linear infinite;
-    font-family: 'Cantique Normal';
+  
   }
 
   .moving-text-6 {
