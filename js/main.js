@@ -263,6 +263,16 @@ $(document).ready(function() {
 
 
     })
+    $(document).on("click", ".crea_trigger3", function() {
+        $(".Crea_1").css("display", "none")
+        $(".Crea_2").css("display", "none")
+        $(".Crea_3").css("display", "flex")
+        $(".crea_trigger1").css("opacity", "1")
+        $(".crea_trigger2").css("opacity", "1")
+        $(".crea_trigger3").css("opacity", "0.5")
+
+
+    })
     $(document).on("click", ".photo_trigger1", function() {
         $(".Photo_1").css("display", "block")
         $(".Photo_2").css("display", "none")

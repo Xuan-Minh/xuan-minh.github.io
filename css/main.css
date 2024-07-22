@@ -488,7 +488,10 @@ span:hover {
   display: none;
   margin-top: 0%;
 }
-
+.Crea_3 {
+  display: none;
+  margin-top: 0%;
+}
 @media (max-width:1800px) {
   .rp_subtitle {
     font-size: 18px;
