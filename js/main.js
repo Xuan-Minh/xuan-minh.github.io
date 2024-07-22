@@ -58,7 +58,7 @@ window.addEventListener("load", () => {
 });
 
 
-var timeoutInMiliseconds = 5000;
+var timeoutInMiliseconds = 20000;
 var timeoutId;
 
 function startTimer() {
