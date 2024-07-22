@@ -458,9 +458,6 @@ span:hover {
 .Photo_3 {
   display: none;
 }
-.Photo_4 {
-  display: none;
-}
 
 .Video_1 {
   display: none;
@@ -476,14 +473,7 @@ span:hover {
   display: none;
   width: 60%;
 }
-.Video_4 {
-  display: none;
-  width: 60%;
-}
-.Video_5 {
-  display: none;
-  width: 60%;
-}
+
 .Crea_2 {
   display: none;
   margin-top: 0%;
@@ -584,12 +574,6 @@ span:hover {
     }
 
     .Video_3 {
-      width: 35%
-    }
-    .Video_4 {
-      width: 35%
-    }
-    .Video_5 {
       width: 35%
     }
 
